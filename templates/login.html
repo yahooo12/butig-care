@@ -1,8 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Log in | Butig Care</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
-<body class="auth-page">
-    <a class="brand auth-brand" href="/">butig<span>.</span></a>
-    <main class="auth-layout"><section class="auth-side"><p class="eyebrow">Welcome back</p><h1>Your care, all in one place.</h1><p>Pick up where you left off with a clearer view of your health journey.</p></section>
-    <section class="auth-card"><p class="eyebrow">Butig Care account</p><h2>Log in</h2><p class="form-lede">Good to see you again.</p>{% with messages = get_flashed_messages() %}{% if messages %}<div class="flash">{{ messages[0] }}</div>{% endif %}{% endwith %}<form method="POST"><label for="email">Email address</label><input id="email" type="email" name="email" required autocomplete="email"><label for="password">Password</label><input id="password" type="password" name="password" required autocomplete="current-password"><button type="submit" class="button">Log in</button></form><p class="auth-switch">New to Butig? <a href="/register">Create an account</a></p></section></main>
-</body></html>
