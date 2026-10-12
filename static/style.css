@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f8f6;
+    color: #24352f;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+}
+
+nav a {
+    margin-right: 16px;
+    color: #24352f;
+    text-decoration: none;
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.brand span {
+    color: #20a67a;
+}
+
+.product-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 70px 8%;
+}
+
+.hero-copy,
+.hero-visual {
+    flex: 1;
+}
+
+h1 {
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.1;
+}
+
+.hero-text {
+    line-height: 1.8;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #16845f;
+    color: white;
+    text-decoration: none;
+}
+
+.hero-visual {
+    padding: 30px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 10px 35px #00000010;
+}
+
+.product-points {
+    padding: 50px 8%;
+    background: white;
+}
+
+.point-grid {
+    display: flex;
+    gap: 24px;
+}
+
+.point {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #e1ebe5;
+    border-radius: 12px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .product-hero,
+    .point-grid {
+        flex-direction: column;
+    }
+}
